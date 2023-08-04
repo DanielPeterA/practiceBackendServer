@@ -10,6 +10,7 @@ app.use(express.urlencoded({extended:false}))
 app.use(express.json());
 
 app.get('/',(req,res)=>{
+    res.setHeader("Access-Control_Allow-Credentials","true")
     res.send('Express Running')
 });
 app.post('/createnotes',(req,res)=>{

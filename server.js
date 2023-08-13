@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const Schema = require('./mongodb')
+const Schema = require('./Atlas')
 const cors = require('cors')
 const PORT = process.env.PORT || 8000
 
